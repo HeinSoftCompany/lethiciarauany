@@ -274,6 +274,11 @@ img {
   bottom: 70px;
   width: min(40vw, 520px);
 }
+
+.blur {
+  color: var(--wine);
+}
+
 .palette {
   right: 35%;
   top: 95px;

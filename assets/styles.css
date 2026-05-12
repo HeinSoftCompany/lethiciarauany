@@ -116,109 +116,6 @@ img {
   display: none;
 }
 
-@media (max-width: 900px) {
-  .nav {
-    position: sticky;
-    top: 0;
-    overflow: visible;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 82px;
-    left: 5%;
-    right: 5%;
-    z-index: 999;
-
-    display: flex !important;
-    flex-direction: column;
-    gap: 14px;
-
-    padding: 18px;
-    border-radius: 32px;
-
-    background: linear-gradient(
-      180deg,
-      rgba(255, 245, 248, 0.96),
-      rgba(255, 236, 243, 0.92)
-    );
-
-    backdrop-filter: blur(22px);
-    border: 1px solid rgba(169, 29, 85, 0.1);
-
-    box-shadow:
-      0 25px 80px rgba(169, 29, 85, 0.12),
-      inset 0 1px 0 rgba(255, 255, 255, 0.7);
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
-    transform: translateY(-12px) scale(0.98);
-    transition: 0.35s;
-  }
-
-  .nav-links.active {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateY(0) scale(1);
-  }
-
-  .nav-links a {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    min-height: 72px;
-    padding: 0 24px;
-
-    border-radius: 32px;
-    background: linear-gradient(
-      180deg,
-      rgba(255, 245, 248, 0.96),
-      rgba(255, 236, 243, 0.92)
-    );
-
-    color: #ee4d90;
-
-    font-size: 18px;
-    font-weight: 600;
-
-    border: 10px solid linear-gradient(135deg, #a91d55, #d94c8a) !important;
-
-    box-shadow: 0 10px 30px rgba(169, 29, 85, 0.12);
-
-    transition: 0.35s;
-  }
-
-  .nav-links a:hover {
-    transform: translateY(-2px) scale(1.01);
-    background: #fff0f6;
-  }
-
-  .nav-links a::before,
-  .nav-links a::after {
-    display: none;
-  }
-
-  .mobile-whatsapp {
-    background: linear-gradient(135deg, #a91d55, #d94c8a) !important;
-    color: #fff !important;
-    border: none !important;
-  }
-
-  .nav .nav-cta {
-    display: none !important;
-  }
-
-  .menu-toggle {
-    display: flex;
-  }
-}
-
 .brand {
   line-height: 0.85;
   color: var(--wine);
@@ -880,41 +777,6 @@ img {
   display:none;
 }
 
-@media(max-width:900px){
-
-  .footer-bottom{
-    flex-direction:column;
-    text-align:center;
-  }
-
-  .footer-bottom p{
-    justify-content:center;
-    flex-wrap:wrap;
-  }
-
-}
-
-/* RESPONSIVO */
-
-@media (max-width: 900px) {
-  .footer {
-    padding: 70px 5% 40px;
-  }
-
-  .footer-top {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .footer-brand h2 {
-    font-size: 34px;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-  }
-}
 .course-page {
   background: linear-gradient(180deg, #13060d 0%, #3b1024 42%, #fff5f8 42%);
 }
@@ -1011,13 +873,133 @@ img {
   opacity: 1;
   transform: translateY(0);
 }
+
 @media (max-width: 900px) {
   .nav {
+    position: sticky;
+    top: 0;
+    overflow: visible;
     padding: 0 5%;
   }
+
   .nav-links {
+    position: absolute;
+    top: 82px;
+    left: 5%;
+    right: 5%;
+    z-index: 999;
+
+    display: flex !important;
+    flex-direction: column;
+    gap: 14px;
+
+    padding: 18px;
+    border-radius: 32px;
+
+    background: linear-gradient(
+      180deg,
+      rgba(255, 245, 248, 0.96),
+      rgba(255, 236, 243, 0.92)
+    );
+
+    backdrop-filter: blur(22px);
+    border: 1px solid rgba(169, 29, 85, 0.1);
+
+    box-shadow:
+      0 25px 80px rgba(169, 29, 85, 0.12),
+      inset 0 1px 0 rgba(255, 255, 255, 0.7);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translateY(-12px) scale(0.98);
+    transition: 0.35s;
+  }
+
+  .nav-links.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+  }
+
+  .nav-links a {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 72px;
+    padding: 0 24px;
+
+    border-radius: 32px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 245, 248, 0.96),
+      rgba(255, 236, 243, 0.92)
+    );
+
+    color: #ee4d90;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    border: 10px solid linear-gradient(135deg, #a91d55, #d94c8a) !important;
+
+    box-shadow: 0 10px 30px rgba(169, 29, 85, 0.12);
+
+    transition: 0.35s;
+  }
+
+  .nav-links a:hover {
+    transform: translateY(-2px) scale(1.01);
+    background: #fff0f6;
+  }
+
+  .nav-links a::before,
+  .nav-links a::after {
     display: none;
   }
+
+  .mobile-whatsapp {
+    background: linear-gradient(135deg, #a91d55, #d94c8a) !important;
+    color: #fff !important;
+    border: none !important;
+  }
+
+  .nav .nav-cta {
+    display: none !important;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .footer {
+    padding: 70px 5% 40px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand h2 {
+    font-size: 34px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .hero,
   .course-hero,
   .split,
@@ -1025,13 +1007,16 @@ img {
   .offer {
     grid-template-columns: 1fr;
   }
+
   .hero {
     padding: 70px 5%;
     min-height: auto;
   }
+
   .hero-card {
     justify-self: stretch;
   }
+
   .brushes {
     position: relative;
     right: auto;
@@ -1039,34 +1024,50 @@ img {
     width: 90%;
     margin: 20px auto;
   }
+
   .palette {
     top: 80px;
     right: 5%;
     width: 120px;
   }
+
   .course-grid,
   .testimonial-row,
   .module-grid,
   .gallery {
     grid-template-columns: 1fr;
   }
+
   .gallery-card:nth-child(even) {
     margin-top: 0;
   }
+
   .section {
     padding: 70px 5%;
   }
+
+  #conteudo {
+    padding-bottom: 0%;
+  }
+
+  .eyebrow {
+    margin-top: 5%;
+  }
+
   .final-cta {
     margin: 20px 5% 70px;
     padding: 34px;
     grid-template-columns: 1fr;
   }
+
   .final-cta h2 {
     font-size: 36px;
   }
+
   .course-hero {
     padding: 70px 5%;
   }
+
   .course-brush {
     position: relative;
     right: auto;
@@ -1074,12 +1075,15 @@ img {
     width: 90%;
     opacity: 1;
   }
+
   .offer {
     padding-top: 40px;
   }
+
   .topbar {
     font-size: 12px;
   }
+
   .cursor-glow {
     display: none;
   }
